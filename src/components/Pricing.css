@@ -1,0 +1,52 @@
+/* .pricing-container{
+    position: relative;
+}
+
+.pricing-container::before{
+    content: "";
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background-position: 0 -15rem;
+  position: absolute;
+  background-image: url("../assets/stars_desert_camels.jpg");
+} */
+
+.basic-plan{
+    position: relative;
+}
+
+.basic-plan::before{
+  content: "";
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+  background-position: 50% 40%;
+  position: absolute;
+  background-image: url("../assets/astronaut_desert_lonely.png");
+}
+
+.advanced-plan{
+    position: relative;
+}
+
+.advanced-plan::before{
+  content: "";
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+  position: absolute;
+  background-image: url("../assets/astronaut_closeup.png");
+}

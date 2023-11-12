@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { profil1 } from '../assets'
 

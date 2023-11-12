@@ -1,11 +1,7 @@
 import '../styles.css'
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import { owl2, profil1 } from '../assets'
-import { useContext } from 'react'
-import { ThemeContext } from '../App'
+import { profil1 } from '../assets'
 const GateEffect = () => {
-  const theme = useContext(ThemeContext)
-
   const borderColor = 'white'
   return (
     <div className="hero-container h-[100vh] relative top-20 grid grid-cols-1 sm:grid-cols-2 m-2  gap-10">

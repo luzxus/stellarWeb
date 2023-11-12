@@ -1,7 +1,5 @@
-import React from 'react'
 import Button from './Button'
 import './Pricing.css'
-import { alien_money } from '../assets'
 const Pricing = () => {
   return (
     <div className="pricing-container  bg-slate-400 mt-20 text-white ">

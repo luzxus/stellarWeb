@@ -16,7 +16,6 @@ const Header = () => {
     window.location.href = mailtoLink
   }
 
-  const buttonText = 'Learn More'
   const buttonText1 = 'Book meeting'
   const text =
     'Empowering small businesses through software and web development'

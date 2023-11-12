@@ -15,7 +15,6 @@ const Button: React.FC<ButtonProps> = ({
   const blue2 = '#1690e1'
   const blue1 = '#78A2B0'
   const gray = '#475555ab'
-  const yellow1 = '#E1D35B'
   const styleVariant =
     variant === 'primary' ? blue2 : variant === 'read' ? gray : 'transparent '
   const borderColor =

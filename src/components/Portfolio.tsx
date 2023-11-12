@@ -1,4 +1,3 @@
-import React, { useContext } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
@@ -16,9 +15,7 @@ import {
 } from '../assets'
 import './Portfolio.css'
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa'
-import { ThemeContext } from '../App'
 const Portfolio = () => {
-  const theme = useContext(ThemeContext)
   const projects = [
     { id: 1, title: 'A business page', img: businesspage1 },
     { id: 2, title: 'A landing page', img: landingpage },

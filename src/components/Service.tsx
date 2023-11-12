@@ -1,8 +1,6 @@
 import {
-  Relume,
   astronaut_3_profile_,
   earth,
-  placeholder_image,
   planet_2,
   planet_3,
 } from '../assets'

@@ -14,7 +14,6 @@ const subtitle = 'Our Step By Step Process'
 const containerClass = 'layout p-5 pb-10 m-0 w-full'
 const headingClass =
   'heading text-black font-medium sm:text-4xl text-3xl w-full sm:w-[50%]'
-const rowClass = ''
 
 const listItemClass =
   'list-item-class flex flex-col gap-3 w-full sm:w-[33.33%] border-solid  border-2  rounded-md p-10'

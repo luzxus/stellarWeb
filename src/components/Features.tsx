@@ -12,22 +12,29 @@ const text = 'Engage with Paradise Development for expert consulting services.'
 const subtitle = 'Our Step By Step Process'
 // CSS classes
 const containerClass = 'layout p-5 pb-10 m-0 w-full'
-const headingClass = 'heading text-black font-medium w-[50%]'
-const rowClass = 'row flex mt-10 mx-5 space-x-5'
+const headingClass =
+  'heading text-black font-medium sm:text-4xl text-3xl w-full sm:w-[50%]'
+const rowClass = ''
 
 const listItemClass =
-  'list-item-class flex flex-col gap-3 w-[33.33%] border-solid  border-2  rounded-md p-10'
+  'list-item-class flex flex-col gap-3 w-full sm:w-[33.33%] border-solid  border-2  rounded-md p-10'
 const listItemNumberClass = 'div font-bold'
+
+const mobileClass = ''
 
 // JSX component
 const Features = () => {
   return (
     <div className={`${containerClass} rounded-md`}>
-      <div className="flex">
+      <div className="flex flex-col sm:flex-row items-center text-center sm:items-start sm:text-start justify-evenly ">
         <p className={headingClass}>{text}</p>
-        <p className="font-light flex items-end text-3xl">{subtitle}</p>
+        <p className="font-light flex items-end text-2xl sm:text-3xl mt-3 sm:mt-0">
+          {subtitle}
+        </p>
       </div>
-      <div className={`${rowClass} drop-shadow-md`}>
+      <div
+        className={`row flex mt-5 sm:mt-10 mx-5 sm:space-x-5 flex-col sm:flex-row drop-shadow-md`}
+      >
         {renderListItem({
           boldText:
             'Our process begins with understanding your business goals and challenges.',
@@ -67,7 +74,8 @@ const renderListItem = ({
   subText,
 }: RenderListProp) => (
   <div
-    className={listItemClass}
+    id="how-it-works"
+    className={`${listItemClass} ${mobileClass} `}
     /*  style={{
       borderColor: '#6DC2D5',
     }} */

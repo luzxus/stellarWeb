@@ -7,7 +7,7 @@ const RotatingProfile = () => {
   const borderColor = 'white'
 
   return (
-    <div className="header-right flex flex-col items-center relative h-full w-full">
+    <div className="header-right flex flex-col relative h-full w-full right-[6rem] sm:right-0 mt-10 mb-10 sm:items-center">
       <div className="circle" style={{ borderColor: borderColor }}>
         <a className="icon absolute right-[9rem] top-[-1rem] bg-green-500">
           <FaFacebook />
@@ -23,7 +23,7 @@ const RotatingProfile = () => {
         </a>
       </div>
       <img
-        className="image rounded-full top-[2rem] absolute h-[15rem] w-[15rem] overflow-hidden "
+        className="image rounded-full top-[2rem] absolute h-[15rem] w-[15rem] overflow-hidden right-[32rem] sm:right-[10rem]"
         style={{ backgroundColor: borderColor }}
         src={profil1}
         alt="Profile"
@@ -35,7 +35,8 @@ const RotatingProfile = () => {
 const TeamMember = () => {
   const downloadCV = () => {
     const link = document.createElement('a')
-    link.href = 'https://www.dropbox.com/scl/fi/y7y37uoeiepn7bh5aozn2/Forefront_Consulting_Group_AB_Richard_Gr-nroos_uppdaterad_cv.pdf?rlkey=jttwk07k57soen28c16t4r0v7&dl=0'
+    link.href =
+      'https://www.dropbox.com/scl/fi/y7y37uoeiepn7bh5aozn2/Forefront_Consulting_Group_AB_Richard_Gr-nroos_uppdaterad_cv.pdf?rlkey=jttwk07k57soen28c16t4r0v7&dl=0'
     link.download = 'Richard_Gronroos_CV.docx' // Specify the desired file name
     document.body.appendChild(link)
     link.click()
@@ -43,23 +44,23 @@ const TeamMember = () => {
   }
 
   return (
-    <div className="team-container flex mt-10 mx-10">
+    <div className="team-container flex mt-10 mx-10 flex-col sm:flex-row w-full">
       <div className="flex gap-2 justify-center flex-col">
-        <h1>Meet our team</h1>
+        <h1 className=''>Meet our team</h1>
         <p>
           Richard is a passionate web and software developer with 5+ years in
           the industry
         </p>
         <button
-          className="mt-3 custom-blue-bg w-[150px] rounded-xl p-2 text-white"
+          className="hidden mt-3 custom-blue-bg w-[150px] rounded-xl p-2 text-white"
           onClick={downloadCV}
         >
           Download CV
         </button>
       </div>
-      <div className="flex items-center w-[800px]">
+      <div className="flex sm:items-center w-[800px] flex-col sm:flex-row items-start">
         <RotatingProfile />
-        <div className="flex flex-col w-[300px] relative right-[5rem]">
+        <div className="flex flex-col w-[300px] relative right-[5rem] items-center sm:items-start">
           <h3 className="custom-blue-color font-bold text-2xl">
             Richard Grönroos
           </h3>

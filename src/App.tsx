@@ -16,10 +16,10 @@ function App() {
         <Service />
         <Features />
         <Testimonials breakpoint="desktop" />
+        <Pricing />
         <CTA />
         <Team />
         {/*  <Portfolio /> */}
-        <Pricing />
         <Footer />
       </div>
     </div>

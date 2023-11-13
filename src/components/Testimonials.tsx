@@ -26,20 +26,21 @@ export const TestimonialCard: React.FC<CardProps> = ({
       </div>
       <div className="review font-semibold text-lg">"{reviewContent}"</div>
       <div className="customerInfo flex">
-        <div className="customer-detail flex">
+        <div className="customer-detail flex  flex-col  w-full">
           <p>{customerName}</p>
-
-          <p>, {location}</p>
-          <div
-            className="divider"
-            style={{
-              height: '25px',
-              width: '2px',
-              margin: '5px',
-              backgroundColor: 'gray',
-            }}
-          ></div>
-          <p> {customerCompanyName}</p>
+          <div className="location-company flex w-full items-center w-max-[18rem] sm:w-full">
+            <p>{location}</p>
+            <div
+              className="divider"
+              style={{
+                height: '25px',
+                width: '2px',
+                margin: '5px',
+                backgroundColor: 'gray',
+              }}
+            ></div>
+            <p> {customerCompanyName}</p>
+          </div>
         </div>
 
         <div className="companyLogo hidden">
@@ -55,12 +56,10 @@ type Props = {
 }
 const Testimonials: React.FC<Props> = () => {
   return (
-    <div className="testimonial-container mx-10 mt-10">
+    <div className="testimonial-container mx-10 mt-10 flex-col block">
       <h2>Customer testimonials</h2>
-      <p className="mt-5 mb-0">
-        Hear what others have to say about us
-      </p>
-      <div className=" mt-10 flex">
+      <p className="mt-5 mb-0">Hear what others have to say about us</p>
+      <div className=" mt-10 flex flex-col sm:flex-row">
         <TestimonialCard
           amountOfStars={5}
           companyLogoPath={Webflow}

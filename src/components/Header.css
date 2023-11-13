@@ -5,11 +5,71 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  padding-bottom: 30px;
 }
 
 .label {
   height: 201px;
+  width: 100%; /* Make width 100% to adapt to different screen sizes */
+  max-width: 768px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center the element horizontally */
+}
+
+/* Add more media queries for other screen sizes if needed */
+
+.label .medium-length-hero {
+  color: var(--white);
+  font-family: var(--heading-h1-font-family);
+  font-size: var(--heading-h1-font-size);
+  font-style: var(--heading-h1-font-style);
+  font-weight: var(--heading-h1-font-weight);
+  left: 0;
+  letter-spacing: var(--heading-h1-letter-spacing);
+  line-height: var(--heading-h1-line-height);
+  text-align: center;
+  top: 0;
   width: 768px;
+}
+
+.label .lorem-ipsum-dolor {
+  color: var(--white);
+  font-family: var(--text-medium-normal-font-family);
+  font-size: var(--text-medium-normal-font-size);
+  font-style: var(--text-medium-normal-font-style);
+  font-weight: var(--text-medium-normal-font-weight);
+  letter-spacing: var(--text-medium-normal-letter-spacing);
+  line-height: var(--text-medium-normal-line-height);
+  text-align: center;
+  width: 768px;
+  margin-top: 85px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .label {
+    height: auto; /* Adjust height for smaller screens */
+    margin-top: 20px; /* Add some spacing at the top for better readability */
+    max-width: 768px;
+    padding:10px;
+  }
+
+  .label .medium-length-hero {
+    font-size: 40px;
+    line-height: var(--heading-h1-mobile-line-height);
+    width: 100%;
+  }
+
+  .label .lorem-ipsum-dolor {
+    font-size: var(--text-medium-normal-font-size);
+    line-height: var(--text-medium-normal-line-height);
+    max-width: 100%;
+  }
 }
 
 :root {
@@ -309,30 +369,4 @@
     0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   --xxlarge: 0px 32px 64px -12px rgba(0, 0, 0, 0.14);
   --xxsmall: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-}
-.label .medium-length-hero {
-  color: var(--white);
-  font-family: var(--heading-h1-font-family);
-  font-size: var(--heading-h1-font-size);
-  font-style: var(--heading-h1-font-style);
-  font-weight: var(--heading-h1-font-weight);
-  left: 0;
-  letter-spacing: var(--heading-h1-letter-spacing);
-  line-height: var(--heading-h1-line-height);
-  text-align: center;
-  top: 0;
-  width: 768px;
-}
-
-.label .lorem-ipsum-dolor {
-  color: var(--white);
-  font-family: var(--text-medium-normal-font-family);
-  font-size: var(--text-medium-normal-font-size);
-  font-style: var(--text-medium-normal-font-style);
-  font-weight: var(--text-medium-normal-font-weight);
-  letter-spacing: var(--text-medium-normal-letter-spacing);
-  line-height: var(--text-medium-normal-line-height);
-  text-align: center;
-  width: 768px;
-  margin-top: 85px;
 }

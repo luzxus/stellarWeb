@@ -2,13 +2,13 @@ import Button from './Button'
 import './Pricing.css'
 const Pricing = () => {
   return (
-    <div className="pricing-container  bg-slate-400 mt-20 text-white ">
+    <div id="pricing" className="pricing-container mt-20 bg-slate-100">
       <div className="text flex flex-col gap-5 justify-center items-center p-10 mx-10">
         <h1>Pricing Plans</h1>
         <h5>Choose the right plan for your business needs</h5>
       </div>
-      <div className="plans-container flex gap-5 justify-center w-full">
-        <div className="basic-plan z-10 w-[50%] m-10 h-[350px] flex flex-col border-solid border-2 border-black p-[10px]">
+      <div className="plans-container flex gap-5 justify-center w-full flex-col sm:flex-row">
+        <div className="basic-plan z-10 w-[calc(100% - 5rem)] sm:w-[50%] m-10 h-[350px] flex flex-col border-solid border-2 border-black p-[10px]">
           <h5 className="text-center">Basic Plan</h5>
           <h1 className="text-center">1000kr</h1>
 
@@ -23,7 +23,8 @@ const Pricing = () => {
             <Button variant="read" text="Read more" />
           </div>
         </div>
-        <div className="advanced-plan z-10 w-[50%] m-10 h-[350px] flex flex-col border-solid border-2 border-black p-[10px]">
+
+        <div className="advanced-plan w-[calc(100% - 5rem)] z-10 sm:w-[50%] m-10 h-[350px] flex flex-col border-solid border-2 border-black p-[10px]">
           <h5 className="text-center">Advanced Plan</h5>
           <h1 className="text-center">2000-3000kr</h1>
 

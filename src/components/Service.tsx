@@ -1,19 +1,14 @@
-import {
-  astronaut_3_profile_,
-  earth,
-  planet_2,
-  planet_3,
-} from '../assets'
+import { astronaut_3_profile_, earth, planet_2, planet_3 } from '../assets'
 
 const Service = () => {
   return (
-    <div id="layout" className="flex mx-10 my-10 gap-5 items-start relative">
+    <div id="services" className="flex mx-10 my-10 gap-5 items-start relative">
       <div id="container" className="flex flex-col flex-wrap w-[50%]">
         <h2 className="mx-2 ">
           Revolutionizing Small Business Consulting with Unique Approach
         </h2>
-        <p className="mx-2 text-base mt-5">
-          At Paradise Development, we take a fresh and innovative approach to
+        <p className="mx-2 text-base mt-5 w-auto h-[200px] sm:h-full">
+          At StellarWeb Solutions, we take a fresh and innovative approach to
           small business consulting. Our team of experts combines software and
           web development expertise to provide tailored solutions that drive
           growth and success.
@@ -41,14 +36,21 @@ const Service = () => {
               </p>
             </li>
           </ul>
-        </div>
-        <div id="action-buttons" className="flex">
-          <button className="mr-2">Learn more</button>
-          <button>Sign up</button>
+          <div className="flex-auto  place-self-end sm:place-self-start flex  sm:hidden mt-5">
+            <img
+              src={astronaut_3_profile_}
+              width="616px"
+              height="640px"
+              className="object-cover"
+              style={{
+                filter: 'drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))',
+              }}
+              alt="Astronaut Profile"
+            />
+          </div>
         </div>
       </div>
-
-      <div className="flex-auto">
+      <div className="flex-auto  place-self-end sm:place-self-start hidden sm:flex">
         <img
           src={astronaut_3_profile_}
           width="616px"

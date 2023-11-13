@@ -3,12 +3,13 @@ import { profil1 } from '../assets'
 
 import '../styles.css'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const RotatingProfile = () => {
   const borderColor = 'white'
 
   return (
     <div className="header-right flex flex-col relative h-full w-full right-[6rem] sm:right-0 mt-10 mb-10 sm:items-center">
-      <div className="circle" style={{ borderColor: borderColor }}>
+      <div className="circle hidden" style={{ borderColor: borderColor }}>
         <a className="icon absolute right-[9rem] top-[-1rem] bg-green-500">
           <FaFacebook />
         </a>
@@ -44,9 +45,9 @@ const TeamMember = () => {
   }
 
   return (
-    <div className="team-container flex mt-10 mx-10 flex-col sm:flex-row w-full">
-      <div className="flex gap-2 justify-center flex-col">
-        <h1 className=''>Meet our team</h1>
+    <div className="team-container justify-between flex mt-10 mb-10 flex-col sm:flex-row w-full">
+      <div className="flex gap-5  flex-col mx-10">
+        <h1 className="">Meet our team</h1>
         <p>
           Richard is a passionate web and software developer with 5+ years in
           the industry
@@ -58,9 +59,14 @@ const TeamMember = () => {
           Download CV
         </button>
       </div>
-      <div className="flex sm:items-center w-[800px] flex-col sm:flex-row items-start">
-        <RotatingProfile />
-        <div className="flex flex-col w-[300px] relative right-[5rem] items-center sm:items-start">
+      <div className="flex  mt-10 items-center sm:w-[800px] w-full flex-col sm:flex-row ">
+        {/*  <RotatingProfile /> */}
+        <img
+          className="image rounded-full h-[15rem] w-[15rem] mx-5 overflow-hidden "
+          src={profil1}
+          alt="Profile"
+        />
+        <div className="flex flex-col w-[300px]  items-center">
           <h3 className="custom-blue-color font-bold text-2xl">
             Richard Grönroos
           </h3>

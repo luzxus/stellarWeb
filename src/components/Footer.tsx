@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white p-8">
@@ -11,13 +10,16 @@ const Footer = () => {
           <a href="#" className="mx-2 hover:text-gray-400">
             Home
           </a>
-          <a href="#" className="mx-2 hover:text-gray-400">
+          <a href="#services" className=" mx-2  hover:text-gray-400">
             Services
           </a>
-          <a href="#" className="mx-2 hover:text-gray-400">
-            About Us
+          <a href="#pricing" className="hover:text-gray-400 mx-2 ">
+            Pricing
           </a>
-          <a href="#" className="mx-2 hover:text-gray-400">
+          <a href="#how-it-works" className="hover:text-gray-400 mx-2 ">
+            How it works
+          </a>
+          <a href="#cta" className="hover:text-gray-400 mx-2 ">
             Contact
           </a>
         </div>

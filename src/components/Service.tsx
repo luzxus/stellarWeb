@@ -18,7 +18,7 @@ const Service = () => {
             <li className="flex items-baseline">
               <img className="small-icon" src={earth} />
               <p className="text-base mt-4 ml-1">
-                Increase Efficiency and Maximize Potential with Paradise
+                Increase Efficiency and Maximize Potential with StellarWeb Solutions
                 Development
               </p>
             </li>
@@ -31,7 +31,7 @@ const Service = () => {
             <li className="flex items-baseline">
               <img className="small-icon" src={planet_3} />
               <p className="text-base mt-4 ml-1">
-                Transform Your Business with Paradise Development's Cutting-Edge
+                Transform Your Business with StellarWeb Solutions's Cutting-Edge
                 Solutions
               </p>
             </li>

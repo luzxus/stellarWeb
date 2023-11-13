@@ -20,7 +20,7 @@ const Header = () => {
   const text =
     'Empowering small businesses through software and web development'
   const text1 =
-    'Paradise Development is dedicated to helping small businesses thrive by providing top-notch software and web development solutions. Our mission is to empower entrepreneurs with the tools they need to succeed in today&#39;s digital world.'
+    'StellarWeb Solutions is dedicated to helping small businesses thrive by providing top-notch software and web development solutions. Our mission is to empower entrepreneurs with the tools they need to succeed in today&#39;s digital world.'
 
   return (
     <div className={`header`}>

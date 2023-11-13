@@ -8,7 +8,7 @@ type RenderListProp = {
   isHeading?: boolean
   backgroundImage?: string
 }
-const text = 'Engage with Paradise Development for expert consulting services.'
+const text = 'Engage with StellarWeb Solutions for expert consulting services.'
 const subtitle = 'Our Step By Step Process'
 // CSS classes
 const containerClass = 'layout p-5 pb-10 m-0 w-full'
